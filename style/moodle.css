@@ -1102,7 +1102,7 @@ h5 {
 .svw-body .svw-cstm_frm .item_custom .cnt_row1 {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr minmax(140px, auto);
   gap: 0px 4px;
 }
 .svw-body .svw-cstm_frm .item_custom .cnt_row1 .col1 {
@@ -1243,7 +1243,7 @@ h5 {
 .svw-body .svw-cstm_frm .item_custom .cnt_row5 {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr minmax(140px, auto);
   gap: 0px 4px;
   justify-content: stretch;
   align-content: stretch;
@@ -6088,9 +6088,26 @@ body #page-wrapper #page #page-content {
 }
 body #page-wrapper #page .main-inner {
   background-color: #F9FFFF;
+  padding: 0 0.5rem 1.5rem !important;
+  max-width: 1320px !important;
+}
+body #page-wrapper #page .main-inner .header-maxwidth {
+  max-width: 100%;
 }
 body #page-wrapper #page #region-main {
   background-color: #F9FFFF;
+}
+body #page-wrapper #page div.grid-category {
+  padding: 0 0.5rem 1.5rem !important;
+  max-width: 1320px !important;
+  width: 100%;
+}
+
+footer#page-footer.footer-popover.bg-white {
+  max-width: 1320px !important;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
 }
 
 .popover.footer .popover-body {
