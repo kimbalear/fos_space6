@@ -206,6 +206,7 @@ h5 {
   justify-self: center;
   align-self: center;
   grid-area: title;
+  text-align: center;
   color: #00C9CE;
   font-size: 2rem;
 }
